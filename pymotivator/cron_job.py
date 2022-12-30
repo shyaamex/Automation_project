@@ -4,7 +4,7 @@ import time
 scheduler=BackgroundScheduler(timezone="Asia/Kolkata")
 scheduler.start()
 
-job=scheduler.add_job(send_whatsapp_text,'cron',[client,quote],hour="9",minute="47",second="30")
+job=scheduler.add_job(send_whatsapp_text,'cron',[client,quote],hour="4",minute="32",second="30")
 print(job)
 
 while True:
